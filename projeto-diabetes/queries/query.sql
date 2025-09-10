@@ -15,3 +15,6 @@ SELECT nome, data_nascimento FROM pacientes WHERE cidade = 'Recife';
 
 --6. Conte quantos pacientes do sexo feminino existem em cada cidade.
 SELECT cidade, COUNT(*) AS quantidade FROM pacientes WHERE sexo = 'F' GROUP BY cidade;
+
+--7. Qual é a média de glicose dos pacientes registrados na tabela diabetes_id?
+SELECT AVG(glicose) FROM diabetes_id;
