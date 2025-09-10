@@ -18,3 +18,7 @@ SELECT cidade, COUNT(*) AS quantidade FROM pacientes WHERE sexo = 'F' GROUP BY c
 
 --7. Qual é a média de glicose dos pacientes registrados na tabela diabetes_id?
 SELECT AVG(glicose) FROM diabetes_id;
+
+--8. Liste todos os pacientes com suas respectivas consultas, se houver.
+SELECT * FROM pacientes AS p 
+INNER JOIN consultas AS c ON p.id = c.paciente_id
