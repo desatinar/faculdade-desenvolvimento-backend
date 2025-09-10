@@ -8,3 +8,4 @@ SELECT * FROM pacientes LIMIT 10;
 PRAGMA table_info(pacientes);
 
 --4. Quantos pacientes foram diagnosticados com diabetes e quantos não foram?
+SELECT resultado, COUNT(*) AS quantidade FROM diabetes_id GROUP BY resultado;
