@@ -11,4 +11,4 @@ PRAGMA table_info(pacientes);
 SELECT resultado, COUNT(*) AS quantidade FROM diabetes_id GROUP BY resultado;
 
 --5. Mostre o nome e a data de nascimento dos pacientes que moram em "Recife".
-SELECT * FROM pacientes WHERE cidade = 'Recife';
+SELECT nome, data_nascimento FROM pacientes WHERE cidade = 'Recife';
