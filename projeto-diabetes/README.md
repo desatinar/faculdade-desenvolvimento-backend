@@ -29,7 +29,7 @@ projeto-diabetes
  ┃ ┣ query.py          # executa queries no banco SQLite
  ┃ ┗ utils.py          # funções auxiliares (se precisar)
  ┣ docs
- ┃ ┗ diabetes_perguntas.txt
+ ┃ ┗ diabetes_perguntas.docx
  ┣ queries
  ┃ ┗ query.sql         # arquivo com consultas SQL
  ┣ README.md
