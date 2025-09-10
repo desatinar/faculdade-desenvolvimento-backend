@@ -18,10 +18,11 @@ def csvs_to_sqlite(csv_list, db_name):
             except Exception as e:
                 print('Ocorreu um erro ao processar o arquivo')
 
-db_file = './data/clinica.db'
+db_file = '../data/clinica.db'
 files = [
-    './data/consultas.csv',
-    './data/pacientes.csv'
+    '../data/consultas.csv',
+    '../data/pacientes.csv',
+    '../data/diabetes_id.csv'
 ]
 
 csvs_to_sqlite(files, db_file)
