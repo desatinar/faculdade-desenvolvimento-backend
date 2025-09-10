@@ -21,4 +21,6 @@ SELECT AVG(glicose) FROM diabetes_id;
 
 --8. Liste todos os pacientes com suas respectivas consultas, se houver.
 SELECT * FROM pacientes AS p 
-INNER JOIN consultas AS c ON p.id = c.paciente_id
+INNER JOIN consultas AS c ON p.id = c.paciente_id;
+
+--9. A partir dos resultados anteriores, escreva um breve relatório.

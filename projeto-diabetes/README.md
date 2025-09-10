@@ -27,11 +27,57 @@ projeto-diabetes
  ┃ ┣ __init__.py
  ┃ ┣ setup.py          # gera o banco a partir dos CSVs
  ┃ ┣ query.py          # executa queries no banco SQLite
- ┃ ┗ utils.py          # funções auxiliares (se precisar)
  ┣ docs
  ┃ ┗ diabetes_perguntas.docx
  ┣ queries
  ┃ ┗ query.sql         # arquivo com consultas SQL
  ┣ README.md
  ┗ requirements.txt
+```
 
+## Relatório dos Dados  
+
+O banco de dados possui 3 tabelas principais:  
+- consultas  
+- pacientes  
+- diabetes_id  
+
+### Tabela pacientes  
+Colunas:  
+- id (INTEGER)  
+- nome (TEXT)  
+- sexo (TEXT)  
+- data_nascimento (TEXT)  
+- cidade (TEXT)  
+- bairro (TEXT)  
+
+Exemplos de registros iniciais:  
+- Brenda Alves (Jaboatão, 1995-02-24)  
+- Joaquim Câmara (Olinda, 1954-03-08)  
+- Igor Montenegro (Recife, 1985-08-27)  
+
+---
+
+### Estatísticas Gerais  
+- Pacientes diagnosticados com diabetes: 52  
+- Pacientes sem diabetes: 85  
+- Média de glicose registrada: ~118,11  
+
+---
+
+### Distribuição por Cidade e Sexo  
+- Recife → 57 pacientes femininos  
+- Olinda → 25  
+- Paulista → 17  
+- Carpina → 14  
+- Caruaru → 13  
+- Jaboatão → 13  
+- Petrolina → 13  
+
+---
+
+### Observações  
+- A cidade de Recife concentra a maior parte dos pacientes, incluindo nomes como Igor Montenegro, Mariana Silva e Sandra Oliveira.  
+- A relação entre pacientes e consultas pode ser detalhada com queries específicas.  
+
+---
