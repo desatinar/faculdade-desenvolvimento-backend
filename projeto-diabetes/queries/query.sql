@@ -12,3 +12,6 @@ SELECT resultado, COUNT(*) AS quantidade FROM diabetes_id GROUP BY resultado;
 
 --5. Mostre o nome e a data de nascimento dos pacientes que moram em "Recife".
 SELECT nome, data_nascimento FROM pacientes WHERE cidade = 'Recife';
+
+--6. Conte quantos pacientes do sexo feminino existem em cada cidade.
+SELECT cidade, COUNT(*) AS quantidade FROM pacientes WHERE sexo = 'F' GROUP BY cidade;
