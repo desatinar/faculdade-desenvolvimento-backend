@@ -7,3 +7,4 @@ SELECT * FROM pacientes LIMIT 10;
 --3. Quais são os nomes e tipos de dados das colunas da tabela pacientes?
 PRAGMA table_info(pacientes);
 
+--4. Quantos pacientes foram diagnosticados com diabetes e quantos não foram?
